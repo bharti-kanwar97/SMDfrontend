@@ -13,8 +13,9 @@ export default function AddBlog() {
     e.preventDefault();
 
     const formData = new FormData(e.target);
-
-    formData.set("content", content);
+     formData.append("title", title);
+formData.append("content", content);
+formData.append("image", imageFile);
 
 
     try {
