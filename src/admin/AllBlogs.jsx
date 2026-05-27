@@ -63,7 +63,7 @@ export default function AllBlogs() {
                 >
                   <td className="text-[18px] px-4 py-2">
                     <img
-                      src={`http://localhost:3000/uploads/${blog.image}`}
+                      src={blog.image}
                       className="w-[40px] h-[40px] mx-auto"
                       alt=""
                     />

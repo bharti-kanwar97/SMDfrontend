@@ -38,7 +38,7 @@ export default function BlogDetail() {
               Image:{" "}
               <span className="text-[18px] text-zinc-800">
                 <img
-                  src={`http://localhost:3000/uploads/${blog?.image}`}
+                  src={blog?.image}
                   alt=""
                   className="w-[200px] h-[200px] mx-auto"
                 />

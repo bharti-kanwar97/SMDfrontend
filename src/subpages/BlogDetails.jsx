@@ -57,7 +57,7 @@ export default function BlogDetails() {
             })}
           </h3>
           <img
-            src={`http://localhost:3000/uploads/${blog.image}`}
+            src={blog.image}
             alt=""
             className="mt-8 h-[400px] md:h-[600px] w-full  border-2 border-neutral-200 rounded-2xl"
           />

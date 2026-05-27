@@ -95,9 +95,10 @@ export default function Courses() {
                       </div>
                     </div>
                   </div>
+                  {/* src={`http://localhost:3000/uploads/${course.subLogo}`} */}
                   <div className="">
                     <img
-                      src={`http://localhost:3000/uploads/${course.subLogo}`}
+                      src={course.subLogo}
                       alt=""
                       className="object-cover h-48 w-full rounded-t-lg"
                     />

@@ -38,7 +38,7 @@ export default function SubjectDetail() {
             <p className="text-[20px]">
               <span className="text-[18px] text-zinc-800">
                 <img
-                  src={`http://localhost:3000/uploads/${subject.subLogo}`}
+                  src={subject.image}
                   alt=""
                   className="w-[200px] h-[200px] mx-auto"
                 />
@@ -56,7 +56,7 @@ export default function SubjectDetail() {
             <p className="text-[20px]">
               <span className="text-[18px] text-zinc-800">
                 <img
-                  src={`http://localhost:3000/uploads/${subject.image1}`}
+                  src={subject.image1}
                   alt=""
                   className="w-[400px] h-[200px] mx-auto"
                 />
@@ -72,7 +72,7 @@ export default function SubjectDetail() {
             <p className="text-[20px]">
               <span className="text-[18px] text-zinc-800">
                 <img
-                  src={`http://localhost:3000/uploads/${subject.image2}`}
+                  src={subject.image2}
                   alt=""
                   className="w-[400px] h-[200px] mx-auto"
                 />

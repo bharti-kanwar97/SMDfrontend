@@ -90,7 +90,7 @@ export default function Blog() {
                   className="content w-auto sm:w-full lg:min-w-[200px] lg:max-w-[350px] bg-white border-gray-300 border-[1px] rounded-lg hover:shadow-lg/30 hover:transition-all hover:duration-400 hover:-translate-y-2 hover:ease-in-out hover:cursor-pointer duration-400 ease-in-out"
                 >
                   <img
-                    src={`http://localhost:3000/uploads/${blog.image}`}
+                    src={blog.image}
                     alt=""
                     className="w-auto min-w-full h-auto max-h-[300px] sm:w-full md:w-[250px] md:h-[200px] sm:h-[220px] lg:w-fit lg:h-[200px] mx-auto  rounded-t-lg"
                   />
