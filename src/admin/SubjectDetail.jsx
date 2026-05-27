@@ -38,7 +38,7 @@ export default function SubjectDetail() {
             <p className="text-[20px]">
               <span className="text-[18px] text-zinc-800">
                 <img
-                  src={subject.image}
+                  src={subject.subLogo}
                   alt=""
                   className="w-[200px] h-[200px] mx-auto"
                 />
