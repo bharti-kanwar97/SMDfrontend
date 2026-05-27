@@ -66,7 +66,7 @@ export default function AllSubject() {
                   >
                     <td className="text-[18px] px-4 py-2">
                       <img
-                        src={subject.image}
+                        src={subject.subLogo}
                         className="w-[40px] h-[40px] mx-auto"
                         alt=""
                       />
