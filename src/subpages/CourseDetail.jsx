@@ -64,7 +64,7 @@ export default function CourseDetail() {
             </h1>{" "}
             <br />
             <img
-              src={`http://localhost:3000/uploads/${course?.image1}`}
+              src={course?.image1}
               alt=""
               className="w-full h-[250px] sm:h-[280px] lg:h-[300px]"
             />
@@ -83,7 +83,7 @@ export default function CourseDetail() {
         <div className="flex md:flex-row flex-col gap-10 md:gap-4 lg:gap-15 xl:gap-6 xl:mx-40 lg:mx-10 md:mx-8 sm:mx-10 mx-8 ">
           <div className={`md:w-1/2 w-full mx-0 `}>
             <img
-              src={`http://localhost:3000/uploads/${course?.image2}`}
+              src={course?.image2}
               alt=""
               className="w-full h-[250px] sm:h-[280px] lg:h-[300px]"
             />
