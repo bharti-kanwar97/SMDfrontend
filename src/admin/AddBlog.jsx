@@ -7,6 +7,8 @@ import { useNavigate } from "react-router-dom";
 import '../style.css'
 export default function AddBlog() {
   const [content, setContent] = useState("");
+  const [image, setImage] = useState(null);
+  const [title, setTitle] = useState("");
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
@@ -15,7 +17,7 @@ export default function AddBlog() {
     const formData = new FormData(e.target);
      formData.append("title", title);
 formData.append("content", content);
-formData.append("image", imageFile);
+formData.append("image", image);
 
 
     try {
