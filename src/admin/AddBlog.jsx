@@ -14,17 +14,18 @@ export default function AddBlog() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const formData = new FormData(e.target);
+    const formData = new FormData();
      formData.append("title", title);
 formData.append("content", content);
 formData.append("image", image);
 
 
     try {
-      const res = await api.post("blogs/addblog", formData);
+      const res = await api.post("/blogs/addblog", formData);
       console.log(res.data);
-      e.target.reset();
-      setContent("");
+      setTitle("");
+    setContent("");
+    setImage(null);
       navigate("/admin/allBlogs");
     } catch (error) {
       console.log(error);
@@ -55,7 +56,7 @@ formData.append("image", image);
               name="title"
               id="title"
                value={title}
-          onChange={(e) => setTitle(e.target.value)}
+               onChange={(e) => setTitle(e.target.value)}
               placeholder="Title"
               className="w-full py-1 px-2 mt-0.5 border-2 border-gray-300 rounded-lg"
             />{" "}
@@ -82,34 +83,6 @@ formData.append("image", image);
             >
               Blog Description: &nbsp;&nbsp;
             </label>
-            {/* <textarea name="content" id="editor1" placeholder="Description" rows="5"></textarea> */}
-            {/* <div>
-              <CKEditor
-                editor={ClassicEditor}
-                data={content}
-                config={{
-                  toolbar: [
-                    "heading",
-                    "|",
-                    "bold",
-                    "italic",
-                    "bulletedList",
-                    "numberedList",
-                    "|",
-                    "link",
-                    "blockQuote",
-                    "insertTable",
-                    "imageUpload",
-                    "undo",
-                    "redo",
-                  ],
-                }}
-                onChange={(event, editor) => {
-                  const data = editor.getData();
-                  setContent(data);
-                }}
-              />
-            </div> */}
             <div>
           <UseCKEditor 
           data={content}
