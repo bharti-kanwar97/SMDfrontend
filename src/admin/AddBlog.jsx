@@ -54,6 +54,8 @@ formData.append("image", image);
               type="text"
               name="title"
               id="title"
+               value={title}
+          onChange={(e) => setTitle(e.target.value)}
               placeholder="Title"
               className="w-full py-1 px-2 mt-0.5 border-2 border-gray-300 rounded-lg"
             />{" "}
@@ -69,6 +71,7 @@ formData.append("image", image);
               type="file"
               name="image"
               id="image"
+              onChange={(e) => setImage(e.target.files[0])}
               className="w-full py-1 px-2 mt-0.5 border-2 border-gray-300 rounded-lg"
             />
             {/* 
