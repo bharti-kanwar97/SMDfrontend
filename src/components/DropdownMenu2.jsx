@@ -19,26 +19,9 @@ const [subMenu, setSubMenu] = useState(false)
   }`} onClick={() => {setOpen(true); setSubMenu(prev => !prev) }}>Course <IoMdArrowDropdown className="inline-block" />
         
    {(subMenu) && (
-              <DropdownMenu open={open} setOpen={setOpen} />
+              <DropdownMenu open={open} setOpen={setOpen} className="lg:hidden" />
             )}
             </li> 
-        {/* <li className='font-sans font-normal text-[#888] text-[16px] leading-[18px] text-left py-[16px] border-b-2 border-dotted relative'>
-
-  <div
-    onClick={() => setSubMenu(prev => !prev)}
-    className='cursor-pointer'
-  >
-    Course <IoMdArrowDropdown className="inline-block" />
-  </div>
-
-  {subMenu && (
-    <DropdownMenu
-      open={open}
-      setOpen={setOpen}
-    />
-  )}
-
-</li> */}
         <li className='font-sans font-normal text-[#888] text-[16px] leading-[18px] text-left py-[16px] border-b-2 border-dotted' onClick={() => {setOpen(false); setSideMenu(false)} }><Link to='/blog'> Blog</Link></li>
         <li className='font-sans font-normal text-[#888] text-[16px] leading-[18px] text-left py-[16px] border-b-2 border-dotted' onClick={() => {setOpen(false); setSideMenu(false)} }><Link to='/contact'> Contact</Link></li>
       </ul>
