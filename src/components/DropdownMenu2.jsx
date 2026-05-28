@@ -12,7 +12,7 @@ const [subMenu, setSubMenu] = useState(false)
       <ul className='flex flex-col gap-4'> 
         <li className='font-sans font-normal text-[#888] text-[16px] leading-[18px] text-left py-[16px] border-b-2 border-dotted'  onClick={() => {setOpen(false); setSideMenu(false)} }><Link to='/'> Home</Link></li>
         <li className='font-sans font-normal text-[#888] text-[16px] leading-[18px] text-left py-[16px] border-b-2 border-dotted' onClick={() => {setOpen(false); setSideMenu(false)} }><Link to='/about'> About</Link></li>
-        <li className='font-sans font-normal text-[#888] text-[16px] text-left py-[16px] border-b-2 border-dotted relative'  onClick={() => {setOpen(true); setSubMenu(prev => !prev) }}>Course <IoMdArrowDropdown className="inline-block" />
+        <li className='font-sans font-normal text-[#888] text-[16px] text-left pt-[16px] leading-[18px] border-b-2 border-dotted relative'  onClick={() => {setOpen(true); setSubMenu(prev => !prev) }}>Course <IoMdArrowDropdown className="inline-block" />
         
    {(subMenu) && (
               <DropdownMenu open={open} setOpen={setOpen} />
