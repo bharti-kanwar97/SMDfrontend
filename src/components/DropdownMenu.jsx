@@ -20,7 +20,7 @@ import api from '../api/axios'
  * @param {function} setLocked - A function that sets the locked state.
  * @param {function} setSideMenu - A function that sets the side menu state.
  */
-export default function DropdownMenu({open, setOpen ,  setLocked, setSideMenu}) {
+export default function DropdownMenu({open, setOpen}) {
   const [name, setName] = useState([])
 
   const loadSubjectName = async () => {
@@ -38,7 +38,7 @@ export default function DropdownMenu({open, setOpen ,  setLocked, setSideMenu}) 
   return (
     
     <>
-  { open ? <div className='lg:fixed w-full lg:max-w-[420px] top-[250px] sm:top-[280px] lg:top-[66px] mx-auto   lg:right-72 xl:right-100 lg:bg-white pl-12  mt-[24px] z-10 block transition-all duration-600 ease-in-out'>
+  { open ? <div className='lg:fixed w-full lg:max-w-[420px] top-[250px] sm:top-[280px] lg:top-[66px] mx-auto   lg:right-72 xl:right-100 lg:bg-white pl-12  mt-[24px] z-10 block transition-all duration-600 ease-in-out' onMouseOver={() => setOpen(true)} onMouseLeave={() => setOpen(false)}>
       <ul className='flex flex-col'>
         {name.map(sub => (
           
