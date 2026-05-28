@@ -68,7 +68,7 @@ export default function ContactForm() {
           name="name"
           id=""
           placeholder="Your Name"
-          className="border-b-1 md:border-2  border-zinc-400 px-4 py-1 md:py-2 md:rounded-md bg-white  w-full md:mt-4 lg:mt-3 sm:mt-2.5 mt-1 "
+          className="border-b-1 md:border-2  border-zinc-400 px-0.5 md:px-4 py-1 md:py-2 md:rounded-md bg-white  w-full md:mt-4 lg:mt-3 sm:mt-2.5 mt-3 "
           value={formData.name}
           onChange={handleChange}
         />
