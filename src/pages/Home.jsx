@@ -239,7 +239,7 @@ export default function Home() {
       {/* end section for courses */}
 
       {/*start section about founder */}
-      <section className="bg-zinc-100 mx-auto sm:py-20 pb-8   ">
+      <section className="bg-zinc-100 mx-auto sm:py-20 py-8   ">
         <div className="flex flex-col md:flex-row gap-4 md:gap-8 lg:gap-10 xl:gap-25 xl:mx-40 lg:mx-20 md:mx-10 sm:mx-30 mx-2 ">
           <div
             ref={img.ref}
