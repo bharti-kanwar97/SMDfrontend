@@ -79,7 +79,7 @@ export default function ContactForm() {
           name="email"
           id=""
           placeholder="Your Email"
-          className="border-b-1 md:border-2  border-zinc-400 px-0.5 md:px-4 py-1 md:py-2 md:rounded-md bg-white  w-full md:mt-4 lg:mt-3 sm:mt-2.5 mt-1.5 "
+          className="border-b-1 md:border-2  border-zinc-400 px-0.5 md:px-4 py-1 md:py-2 md:rounded-md bg-white  w-full md:mt-4 lg:mt-3 sm:mt-2.5 mt-1.5 outline-none focus:border-amber-500   "
           value={formData.email}
           onChange={handleChange}
         />
@@ -90,13 +90,13 @@ export default function ContactForm() {
           name="phone"
           id=""
           placeholder="Contact No."
-          className="border-b-1 md:border-2  border-zinc-400 px-0.5 md:px-4 py-1 md:py-2 md:rounded-md bg-white  w-full md:mt-4 lg:mt-3 sm:mt-2.5 mt-1.5 "
+          className="border-b-1 md:border-2  border-zinc-400 px-0.5 md:px-4 py-1 md:py-2 md:rounded-md bg-white  w-full md:mt-4 lg:mt-3 sm:mt-2.5 mt-1.5 outline-none focus:border-amber-500   "
           value={formData.phone}
           onChange={handleChange}
         />
         {error.phone && <p className="text-red-500">{error.phone}</p>}
         <br />
-        <select name="about" id="" className={`border-b-1 md:border-2  border-zinc-400 px-0.5 md:px-4 py-1 md:py-2 md:rounded-md bg-white  w-full md:mt-4 lg:mt-3 sm:mt-2.5 mt-1.5  ${formData.about === "" ? "text-neutral-500" : "text-black"}`} value={formData.about}
+        <select name="about" id="" className={`border-b-1 md:border-2  border-zinc-400 px-0.5 md:px-4 py-1 md:py-2 md:rounded-md bg-white  w-full md:mt-4 lg:mt-3 sm:mt-2.5 mt-1.5 outline-none focus:border-amber-500    ${formData.about === "" ? "text-neutral-500" : "text-black"}`} value={formData.about}
           onChange={handleChange}
          >
           <option value="" className="" disabled>Select Course...</option>
@@ -118,7 +118,7 @@ export default function ContactForm() {
           id=""
           placeholder="Your Message"
           rows="8"
-          className="border-1 md:border-2  border-zinc-400 px-0.5 md:px-4 py-1 md:py-2 rounded-md bg-white  w-full md:mt-4 lg:mt-3 sm:mt-2.5 mt-2 "
+          className="border-1 md:border-2  border-zinc-400 px-0.5 md:px-4 py-1 md:py-2 rounded-md bg-white  w-full md:mt-4 lg:mt-3 sm:mt-2.5 mt-2 focus:border-amber-500  "
           value={formData.msg}
           onChange={handleChange}
         ></textarea>
