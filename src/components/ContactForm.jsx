@@ -79,7 +79,7 @@ export default function ContactForm() {
           name="email"
           id=""
           placeholder="Your Email"
-          className="border-2 border-zinc-400 px-4 py-1 md:py-2 rounded-md md:mt-4 lg:mt-3 sm:mt-2.5 mt-1 w-full"
+          className="border-b-1 md:border-2  border-zinc-400 px-0.5 md:px-4 py-1 md:py-2 md:rounded-md bg-white  w-full md:mt-4 lg:mt-3 sm:mt-2.5 mt-1.5 "
           value={formData.email}
           onChange={handleChange}
         />
@@ -90,13 +90,13 @@ export default function ContactForm() {
           name="phone"
           id=""
           placeholder="Contact No."
-          className="border-2 border-zinc-400 px-4 py-1 md:py-2 rounded-md md:mt-4 lg:mt-3 sm:mt-2.5 mt-1 w-full"
+          className="border-b-1 md:border-2  border-zinc-400 px-0.5 md:px-4 py-1 md:py-2 md:rounded-md bg-white  w-full md:mt-4 lg:mt-3 sm:mt-2.5 mt-1.5 "
           value={formData.phone}
           onChange={handleChange}
         />
         {error.phone && <p className="text-red-500">{error.phone}</p>}
         <br />
-        <select name="about" id="" className={`border-2 border-zinc-400 px-4 py-1 md:py-2 rounded-md md:mt-4 lg:mt-3 sm:mt-2.5 mt-1 w-full ${formData.about === "" ? "text-gray-400" : "text-black"}`} value={formData.about}
+        <select name="about" id="" className={`border-b-1 md:border-2  border-zinc-400 px-0.5 md:px-4 py-1 md:py-2 md:rounded-md bg-white  w-full md:mt-4 lg:mt-3 sm:mt-2.5 mt-1.5  ${formData.about === "" ? "text-gray-400" : "text-black"}`} value={formData.about}
           onChange={handleChange}
          >
           <option value="" className="text-gray-400">Select Course...</option>
@@ -118,7 +118,7 @@ export default function ContactForm() {
           id=""
           placeholder="Your Message"
           rows="8"
-          className="border-2 border-zinc-400 px-4 py-1 md:py-2 rounded-md md:mt-4 lg:mt-3 sm:mt-2.5 mt-1 w-full"
+          className="border-b-1 md:border-2  border-zinc-400 px-0.5 md:px-4 py-1 md:py-2 md:rounded-md bg-white  w-full md:mt-4 lg:mt-3 sm:mt-2.5 mt-1.5 "
           value={formData.msg}
           onChange={handleChange}
         ></textarea>
