@@ -17,8 +17,8 @@ export default function Navigation() {
 
   return (
     <>
-      <div id="navi border-b-[0.5px]">
-        <nav className="flex justify-around w-screen items-center fixed top-0 px-5 py-1 bg-white z-10">
+      <div id="navi">
+        <nav className="flex justify-around w-screen items-center fixed top-0 px-5 py-1 bg-white z-10 border-b-[0.5px]">
           {/* hamburgur */}
           <div className="block lg:hidden">
             <Link onClick={() => setSideMenu((prev) => !prev)}>

@@ -48,7 +48,7 @@ export default function Blog() {
 
   return (
     <>
-      <section className="mt-[60px] sm:mt-[100px]">
+      <section className="pt-[60px] sm:mt-[100px]">
         <div
           className="h-[800px] py-10 bg-no-repeat bg-scroll bg-center bg-cover h-auto sm:pt-[40px] sm:pb-[40px] md:pt-[50px] md:pb-[40px] lg:pt-[80px] lg:pb-[50px] "
           style={{ backgroundImage: `url(${blog_bg})` }}
