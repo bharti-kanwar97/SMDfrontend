@@ -13,7 +13,7 @@ const [subMenu, setSubMenu] = useState(false)
         <li className='font-sans font-normal text-[#888] text-[16px] leading-[18px] text-left py-[16px] border-b-2 border-dotted'  onClick={() => {setOpen(false); setSideMenu(false)} }><Link to='/'> Home</Link></li>
         <li className='font-sans font-normal text-[#888] text-[16px] leading-[18px] text-left py-[16px] border-b-2 border-dotted' onClick={() => {setOpen(false); setSideMenu(false)} }><Link to='/about'> About</Link></li>
         <li className={`font-sans font-normal text-[#888] text-[16px] text-left leading-[18px] pt-[16px]
-      ${sideMenu
+      ${subMenu
     ? "pb-none"
     : "pb-[16px] border-b-2 border-dotted"
   }`} onClick={() => {setOpen(true); setSubMenu(prev => !prev) }}>Course <IoMdArrowDropdown className="inline-block" />
