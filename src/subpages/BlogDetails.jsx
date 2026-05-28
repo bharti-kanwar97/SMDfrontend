@@ -23,7 +23,7 @@ export default function BlogDetails() {
 
   return (
     <>
-      <div className="mt-[110px] sm:mt-[100px]  py-4 xl:mx-50 lg:mx-15 md:mx-10 sm:mx-20 mx-8 ">
+      <div className="mt-[90px] sm:mt-[100px]  py-4 xl:mx-50 lg:mx-15 md:mx-10 sm:mx-20 mx-8 ">
         <Link
           to="/"
           className="inline-block text-[#105503] font-roboto font-medium text-[16px] leading-[23px] hover:text-[#666]"
