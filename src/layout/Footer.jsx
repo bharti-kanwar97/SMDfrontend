@@ -101,18 +101,20 @@ export default function Footer() {
           </p>
         </div>
         <div className="text-center lg:text-right">
-          <Link to="/">
+          <a href="https://www.facebook.com/SRMDACADEMY" 
+             target="_blank"
+              rel="noopener noreferrer">
             <FaFacebookF className="inline-block mx-2 text-[18px] sm:text-[20px] lg:text-[18px] font-light text-zinc-500 mx-1 hover:text-blue-700" />
-          </Link>
-          <Link to="/">
+          </a>
+          <a href="">
             <FaTwitter className="inline-block mx-2 text-[18px] sm:text-[20px] lg:text-[18px] font-light text-zinc-500 mx-1 hover:text-sky-500" />
-          </Link>
-          <Link to="/">
+          </a>
+          <a href="/">
             <FaGooglePlusG className="inline-block mx-2 text-[18px] sm:text-[20px] lg:text-[18px] font-light text-zinc-500 mx-1 hover:text-red-800" />
-          </Link>
-          <Link to="/">
+          </a>
+          <a href="/">
             <RiInstagramFill className="inline-block mx-2 text-[18px] sm:text-[20px] lg:text-[18px] font-light text-zinc-500 mx-1 hover:text-yellow-800" />
-          </Link>
+          </a>
         </div>
       </div>
     </>
