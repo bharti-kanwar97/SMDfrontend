@@ -19,7 +19,7 @@ const [subMenu, setSubMenu] = useState(false)
   }`} onClick={() => {setOpen(true); setSubMenu(prev => !prev) }}>Course <IoMdArrowDropdown className="inline-block" />
         
    {(subMenu) && (
-              <DropdownMenu open={open} setOpen={setOpen} className="lg:hidden" />
+              <DropdownMenu open={open} setOpen={setOpen} />
             )}
             </li> 
         <li className='font-sans font-normal text-[#888] text-[16px] leading-[18px] text-left py-[16px] border-b-2 border-dotted' onClick={() => {setOpen(false); setSideMenu(false)} }><Link to='/blog'> Blog</Link></li>
