@@ -99,7 +99,7 @@ export default function ContactForm() {
         <select name="about" id="" className=" border-2 border-zinc-400 px-4 py-1 md:py-2 rounded-md md:mt-4 lg:mt-3 sm:mt-2.5 mt-1 w-full"value={formData.about}
           onChange={handleChange}
          >
-          <option value="" className="placeholder:text-zinc-600">Select Course...</option>
+          <option value="" className="text-gray-400">Select Course...</option>
           <option value="Artificial Intelligence">Artificial Intelligence</option>
           <option value="Machine Learning">Machine Learning</option>
           <option value="Graphic Design">Graphic Design</option>
