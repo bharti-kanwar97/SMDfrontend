@@ -38,7 +38,7 @@ export default function DropdownMenu({open, setOpen ,  setLocked, setSideMenu}) 
   return (
     
     <>
-  { open ? <div className=' fixed w-full lg:max-w-[420px] top-[250px] sm:top-[280px] lg:top-[66px]  shadow-md mx-auto   lg:right-72 xl:right-100 lg:bg-white px-12  mt-[24px] pb-5 z-10 block transition-all duration-600 ease-in-out bg-green-50'>
+  { open ? <div className='w-full lg:max-w-[420px] top-[250px] sm:top-[280px] lg:top-[66px]  shadow-md mx-auto   lg:right-72 xl:right-100 lg:bg-white px-12  mt-[24px] pb-5 z-10 block transition-all duration-600 ease-in-out bg-green-50'>
       <ul className='flex flex-col'>
         {name.map(sub => (
           
