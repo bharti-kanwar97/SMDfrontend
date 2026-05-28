@@ -38,7 +38,7 @@ export default function DropdownMenu({open, setOpen}) {
   return (
     
     <>
-  { open ? <div className='lg:fixed w-full lg:max-w-[420px] top-[250px] sm:top-[280px] lg:top-[66px] mx-auto   lg:right-72 xl:right-100 lg:bg-white pl-12  mt-[24px] z-10 block transition-all duration-600 ease-in-out bg-amber-400' onMouseOver={() => setOpen(true)} onMouseLeave={() => setOpen(false)}>
+  { open ? <div className='lg:fixed w-full lg:max-w-[420px] top-[250px] sm:top-[280px] lg:top-[60px] mx-auto   lg:right-72 xl:right-100 lg:bg-white pl-12  mt-[24px] z-10 block transition-all duration-600 ease-in-out bg-amber-400' onMouseOver={() => setOpen(true)} onMouseLeave={() => setOpen(false)}>
       <ul className='flex flex-col'>
         {name.map(sub => (
           
