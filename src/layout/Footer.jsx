@@ -109,10 +109,14 @@ export default function Footer() {
           <a href="">
             <FaTwitter className="inline-block mx-2 text-[18px] sm:text-[20px] lg:text-[18px] font-light text-zinc-500 mx-1 hover:text-sky-500" />
           </a>
-          <a href="/">
+          <a href="https://share.google/horGGWvj4PN3NO5TS"
+              target="_blank"
+              rel="noopener noreferrer">
             <FaGooglePlusG className="inline-block mx-2 text-[18px] sm:text-[20px] lg:text-[18px] font-light text-zinc-500 mx-1 hover:text-red-800" />
           </a>
-          <a href="/">
+          <a href="https://www.instagram.com/srmdacademy/"
+          target="_blank"
+              rel="noopener noreferrer" >
             <RiInstagramFill className="inline-block mx-2 text-[18px] sm:text-[20px] lg:text-[18px] font-light text-zinc-500 mx-1 hover:text-yellow-800" />
           </a>
         </div>
