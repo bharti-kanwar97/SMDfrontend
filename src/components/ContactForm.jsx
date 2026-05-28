@@ -96,10 +96,10 @@ export default function ContactForm() {
         />
         {error.phone && <p className="text-red-500">{error.phone}</p>}
         <br />
-        <select name="about" id="" className={`border-b-1 md:border-2  border-zinc-400 px-0.5 md:px-4 py-1 md:py-2 md:rounded-md bg-white  w-full md:mt-4 lg:mt-3 sm:mt-2.5 mt-1.5  ${formData.about === "" ? "text-neutral-600" : "text-black"}`} value={formData.about}
+        <select name="about" id="" className={`border-b-1 md:border-2  border-zinc-400 px-0.5 md:px-4 py-1 md:py-2 md:rounded-md bg-white  w-full md:mt-4 lg:mt-3 sm:mt-2.5 mt-1.5  ${formData.about === "" ? "text-neutral-500" : "text-black"}`} value={formData.about}
           onChange={handleChange}
          >
-          <option value="" className="text-zinc-600" disabled>Select Course...</option>
+          <option value="" className="" disabled>Select Course...</option>
           <option value="Artificial Intelligence">Artificial Intelligence</option>
           <option value="Machine Learning">Machine Learning</option>
           <option value="Graphic Design">Graphic Design</option>
