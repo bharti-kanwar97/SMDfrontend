@@ -81,7 +81,7 @@ export default function CourseDetail() {
       </section>
       <section className="mt-4 sm:mt-6  md:mt-15 lg:mt-15 mb-3 lg:mb-10 py-4 sm:py-10 md:py-8 lg:py-16 bg-gray-50">
         <div className="flex md:flex-row flex-col gap-10 md:gap-4 lg:gap-15 xl:gap-6 xl:mx-40 lg:mx-10 md:mx-8 sm:mx-10 mx-8 ">
-          <div className={`md:w-1/2 w-full mx-0 align-self-center `}>
+          <div className={`md:w-1/2 w-full mx-0 md:items-center`}>
             <img
               src={course?.image2}
               alt=""
