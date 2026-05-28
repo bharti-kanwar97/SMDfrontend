@@ -96,7 +96,7 @@ export default function ContactForm() {
         />
         {error.phone && <p className="text-red-500">{error.phone}</p>}
         <br />
-        <select name="about" id="" className=" border-2 border-zinc-400 px-4 py-1 md:py-2 rounded-md md:mt-4 lg:mt-3 sm:mt-2.5 mt-1 w-full"value={formData.about}
+        <select name="about" id="" className={`border-2 border-zinc-400 px-4 py-1 md:py-2 rounded-md md:mt-4 lg:mt-3 sm:mt-2.5 mt-1 w-full ${about === "" ? "text-gray-400" : "text-black"}`} value={formData.about}
           onChange={handleChange}
          >
           <option value="" className="text-gray-400">Select Course...</option>
