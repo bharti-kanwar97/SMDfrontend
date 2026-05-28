@@ -96,7 +96,7 @@ export default function CourseDetail() {
         </div>
       </section>
       {/* This section using for mobile devices */}
-      <section className="  mt-8 mb-5 py-4 bg-gray-50 sm:mx-10 mx-8 block md:hidden ">
+      <section className="  pt-8 pb-5 bg-gray-50 py-4 sm:px-10 px-8 block md:hidden ">
         <ContactForm />
       </section>
     </>
