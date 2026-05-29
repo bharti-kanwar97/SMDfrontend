@@ -11,25 +11,52 @@ export default function ContactForm() {
   const initialState = { name: "", email: "", phone: "", about: "", msg: "" };
   const [formData, setFormData] = useState(initialState);
   const [error, setError] = useState({});
+  const validate = (name, value) => {
+  let error = "";
 
-  /**
-   * Handles a change event on a form input element.
-   * Updates the formData state with the input element's name and value.
-   * @param {Event} e - The change event
-   */
+  switch (name) {
+    case "name":
+      if (!value.trim()) {
+        error = "Name is required";
+      } else if(value.length < 3){
+        error = "Name must be at least 3 characters long";
+      }    else if (!/^[A-Za-z\s]+$/.test(value)) {
+        error = "Name must contain only letters and spaces";
+      }
+      break;
+
+    case "email":
+      if (!value.trim()) {
+        error = "Email is required";
+      } else if (
+        !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(value)
+      ) {
+        error = "Invalid email";
+      }
+      break;
+
+    default:
+      break;
+  }
+
+  setError((prev) => ({
+    ...prev,
+    [name]: error,
+  }));
+};
+
+
   const handleChange = (e) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
     });
+
+     // Real-time validation
+  validate(name, value);
   };
 
-  /**
-   * Handles the form submission by sending a POST request to the server with the form data.
-   * If the server responds with a 200 status code, it resets the form data and displays a success alert.
-   * If the server responds with a non-200 status code, it displays an error message.
-   * @param {Event} e - The form submission event
-   */
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log(formData);
@@ -49,7 +76,7 @@ export default function ContactForm() {
 
     const formattedErrors = {};
 
-    // ✅ safely access errors
+    // safely access errors
     error.response?.data?.errors?.forEach((err) => {
       formattedErrors[err.path] = err.msg;
     });
@@ -83,7 +110,11 @@ export default function ContactForm() {
           value={formData.email}
           onChange={handleChange}
         />
-        {error.email && <p className="text-red-500">{error.email}</p>}
+        {errors.email && (
+  <p className="text-red-500 text-sm">
+    {error.email}
+  </p>)}
+        // {error.email && <p className="text-red-500">{error.email}</p>}
         <br />
         <input
           type="text"
