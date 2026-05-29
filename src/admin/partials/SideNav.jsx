@@ -4,7 +4,7 @@ export default function SideNav() {
   return (
     <>
       <div>
-        <div className=" bg-[#C9C5B1]">
+        <div className=" bg-[#C9C5B1] h-full overflow-y-auto">
           <ul>
             <Link
               to="/admin/dashboard"
