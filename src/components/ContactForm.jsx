@@ -11,39 +11,39 @@ export default function ContactForm() {
   const initialState = { name: "", email: "", phone: "", about: "", msg: "" };
   const [formData, setFormData] = useState(initialState);
   const [error, setError] = useState({});
-  const validate = (name, value) => {
-  let error = "";
+//   const validate = (name, value) => {
+//   let error = "";
 
-  switch (name) {
-    case "name":
-      if (!value.trim()) {
-        error = "Name is required";
-      } else if(value.length < 3){
-        error = "Name must be at least 3 characters long";
-      }    else if (!/^[A-Za-z\s]+$/.test(value)) {
-        error = "Name must contain only letters and spaces";
-      }
-      break;
+//   switch (name) {
+//     case "name":
+//       if (!value.trim()) {
+//         error = "Name is required";
+//       } else if(value.length < 3){
+//         error = "Name must be at least 3 characters long";
+//       }    else if (!/^[A-Za-z\s]+$/.test(value)) {
+//         error = "Name must contain only letters and spaces";
+//       }
+//       break;
 
-    case "email":
-      if (!value.trim()) {
-        error = "Email is required";
-      } else if (
-        !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(value)
-      ) {
-        error = "Invalid email";
-      }
-      break;
+//     case "email":
+//       if (!value.trim()) {
+//         error = "Email is required";
+//       } else if (
+//         !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(value)
+//       ) {
+//         error = "Invalid email";
+//       }
+//       break;
 
-    default:
-      break;
-  }
+//     default:
+//       break;
+//   }
 
-  setError((prev) => ({
-    ...prev,
-    [name]: error,
-  }));
-};
+//   setError((prev) => ({
+//     ...prev,
+//     [name]: error,
+//   }));
+// };
 
 
   const handleChange = (e) => {
@@ -53,7 +53,7 @@ export default function ContactForm() {
     });
 
      // Real-time validation
-  validate(name, value);
+  // validate(name, value);
   };
 
   
@@ -74,16 +74,16 @@ export default function ContactForm() {
        catch (error) {
       console.error(error);
 
-    const formattedErrors = {};
+    // const formattedErrors = {};
 
     // safely access errors
-    error.response?.data?.errors?.forEach((err) => {
-      formattedErrors[err.path] = err.msg;
-    });
+  //   error.response?.data?.errors?.forEach((err) => {
+  //     formattedErrors[err.path] = err.msg;
+  //   });
 
-    setError(formattedErrors);
+  //   setError(formattedErrors);
     }
-  };
+   };
   return (
     <div className="w-[100%] mx-auto bg-white rounded-md h-auto">
       <h1 className="bg-[#105503] text-white px-8 py-2 text-center font-roboto font-medium text-[20px] sm:text-[28px] rounded-t-sm">
