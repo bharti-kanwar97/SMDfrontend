@@ -42,8 +42,8 @@ export default function ContactForm() {
       break;
 
     case "about":
-      if (!value.trim()) {
-        error = "About is required";
+      if (value === null) {
+        error = "select a course";
       }
     break;
 
