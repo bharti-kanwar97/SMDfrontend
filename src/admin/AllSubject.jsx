@@ -51,7 +51,7 @@ export default function AllSubject() {
            <div className="w-[30%]">
                       <SideNav />
                     </div>
-          <div className="w-full ">
+          <div className="w-full h-screen">
             <table className="table-auto text-center max-w-[1200px] min-w-[600px] w-[100%] mx-auto bg-white rounded-xl shadow-xl/80">
               <thead>
                 <tr className="text-2xl bg-[#3b0440] border-b-2 border-zinc-800  ">
