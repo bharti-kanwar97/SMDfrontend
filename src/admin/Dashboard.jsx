@@ -11,7 +11,7 @@ const Dashboard = () => {
           <div className="w-[30%]">
             <SideNav />
           </div>
-          <div className="w-full bg-[#EDE8D0] px-10 py-10 h-full">
+          <div className="w-full bg-[#EDE8D0] px-10 py-10 h-fit">
             <div className="flex gap-5 justify-left ">
               <Link to="/admin/allUsers">
                 <div className="w-[250px]  h-[250px] text-center py-[75px] bg-white rounded-md text-[24px] font-semibold hover:cursor-pointer hover:transition-all hover:translate-y-3 hover:shadow-xl/30 hover:duration-500 hover:delay-200 hover:ease-in-out ease-in-out">
