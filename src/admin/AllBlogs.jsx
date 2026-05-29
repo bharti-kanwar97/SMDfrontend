@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import api from "../api/axios";
 import Create from "./partials/Create";
+import SideNav from "./partials/SideNav";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 export default function AllBlogs() {
