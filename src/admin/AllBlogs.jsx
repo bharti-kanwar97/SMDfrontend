@@ -45,7 +45,10 @@ export default function AllBlogs() {
             <Create />
           </Link>
         </div>
-
+         <div className="flex gap-4">
+           <div className="w-[30%]">
+            <SideNav />
+          </div>
         <div className="bg-[#C9C5B1] w-full h-screen">
           <table className="table-auto text-center max-w-[1200px] min-w-[600px] w-[100%] mx-auto bg-white rounded-xl shadow-xl/80">
             <thead>
@@ -104,6 +107,7 @@ export default function AllBlogs() {
             </tbody>
           </table>
         </div>
+         </div>
       </div>
     </>
   );
