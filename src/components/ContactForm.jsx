@@ -25,6 +25,22 @@ export default function ContactForm() {
       }
       break;
 
+    case "email":
+      if (!value.trim()) {
+        error = "Email is required";
+      } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) {
+        error = "Invalid email format";
+      }
+      break;
+
+    case "phone":
+      if (!value.trim()) {
+        error = "Phone number is required";
+      } else if (!/^\d{10}$/.test(value)) {
+        error = "Invalid phone number format";
+      }
+      break;
+
     default:
       break;
   }
