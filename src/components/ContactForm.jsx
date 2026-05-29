@@ -158,12 +158,12 @@ export default function ContactForm() {
         </select>
        
         {error.about && <p className="text-red-500 text-xs">{error.about}</p>}
-       
+       <br />
         <textarea
           name="msg"
           id=""
           placeholder="Your Message"
-          rows="8"
+          rows="5"
           className="border-1 md:border-2  border-zinc-400 px-0.5 md:px-4 py-1 md:py-2 rounded-md bg-white  w-full md:mt-4 lg:mt-3 sm:mt-2.5 mt-2 outline-none focus:border-amber-500  "
           value={formData.msg}
           onChange={handleChange}
