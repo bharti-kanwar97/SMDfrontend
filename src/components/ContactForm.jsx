@@ -41,12 +41,6 @@ export default function ContactForm() {
       }
       break;
 
-    case "about":
-      if (value === null) {
-        error = "select a course";
-      }
-    break;
-
     case "msg":
       if (!value.trim()) {
         error = "Message is required";
@@ -123,7 +117,7 @@ export default function ContactForm() {
           value={formData.name}
           onChange={handleChange}
         />
-        {error.name && <p className="text-red-500">{error.name}</p>}
+        {error.name && <p className="text-red-500 text-xs">{error.name}</p>}
         <br />
         <input
           type="email"
