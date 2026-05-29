@@ -41,11 +41,11 @@ export default function ContactForm() {
       ...formData,
       [e.target.name]: e.target.value,
     });
+    // Real-time validation
+  validate(name, value);
 
   };
   
-  // Real-time validation
-validate(name, value);
   
   const handleSubmit = async (e) => {
     e.preventDefault();
