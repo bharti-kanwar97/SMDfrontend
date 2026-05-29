@@ -11,39 +11,29 @@ export default function ContactForm() {
   const initialState = { name: "", email: "", phone: "", about: "", msg: "" };
   const [formData, setFormData] = useState(initialState);
   const [error, setError] = useState({});
-//   const validate = (name, value) => {
-//   let error = "";
+  const validate = (name, value) => {
+  let error = "";
 
-//   switch (name) {
-//     case "name":
-//       if (!value.trim()) {
-//         error = "Name is required";
-//       } else if(value.length < 3){
-//         error = "Name must be at least 3 characters long";
-//       }    else if (!/^[A-Za-z\s]+$/.test(value)) {
-//         error = "Name must contain only letters and spaces";
-//       }
-//       break;
+  switch (name) {
+    case "name":
+      if (!value.trim()) {
+        error = "Name is required";
+      } else if(value.length < 3){
+        error = "Name must be at least 3 characters long";
+      }    else if (!/^[A-Za-z\s]+$/.test(value)) {
+        error = "Name must contain only letters and spaces";
+      }
+      break;
 
-//     case "email":
-//       if (!value.trim()) {
-//         error = "Email is required";
-//       } else if (
-//         !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(value)
-//       ) {
-//         error = "Invalid email";
-//       }
-//       break;
+    default:
+      break;
+  }
 
-//     default:
-//       break;
-//   }
-
-//   setError((prev) => ({
-//     ...prev,
-//     [name]: error,
-//   }));
-// };
+  setError((prev) => ({
+    ...prev,
+    [name]: error,
+  }));
+};
 
 
   const handleChange = (e) => {
@@ -53,7 +43,7 @@ export default function ContactForm() {
     });
 
      // Real-time validation
-  // validate(name, value);
+   validate(name, value);
   };
 
   
@@ -110,10 +100,6 @@ export default function ContactForm() {
           value={formData.email}
           onChange={handleChange}
         />
-        {/* {error.email && (
-  <p className="text-red-500 text-sm">
-    {error.email}
-  </p>)} */}
          {error.email && <p className="text-red-500">{error.email}</p>}
         <br />
         <input
