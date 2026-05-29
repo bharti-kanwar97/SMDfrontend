@@ -110,11 +110,11 @@ export default function ContactForm() {
           value={formData.email}
           onChange={handleChange}
         />
-        {errors.email && (
+        {error.email && (
   <p className="text-red-500 text-sm">
     {error.email}
   </p>)}
-        // {error.email && <p className="text-red-500">{error.email}</p>}
+         {/* {error.email && <p className="text-red-500">{error.email}</p>} */}
         <br />
         <input
           type="text"
