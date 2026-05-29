@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import Create from "./partials/Create";
 import api from "../api/axios";
 import { GiHamburgerMenu } from "react-icons/gi";
+import SideNav from "./partials/SideNav.jsx";
 export default function AllSubject() {
   const [subjects, setSubjects] = useState([]);
   const navigate = useNavigate();
@@ -46,7 +47,10 @@ export default function AllSubject() {
           </Link>
         </div>
 
-        <div className="flex">
+        <div className="flex gap-4">
+           <div className="w-[30%]">
+                      <SideNav />
+                    </div>
           <div className="w-full ">
             <table className="table-auto text-center max-w-[1200px] min-w-[600px] w-[100%] mx-auto bg-white rounded-xl shadow-xl/80">
               <thead>
