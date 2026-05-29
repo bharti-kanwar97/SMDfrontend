@@ -42,10 +42,10 @@ export default function ContactForm() {
       [e.target.name]: e.target.value,
     });
 
-     // Real-time validation
-   validate(name, value);
   };
-
+  
+  // Real-time validation
+validate(name, value);
   
   const handleSubmit = async (e) => {
     e.preventDefault();
