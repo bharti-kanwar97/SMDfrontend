@@ -46,12 +46,12 @@ export default function ContactForm() {
         error = "About is required";
       }
     break;
-    
+
     case "msg":
       if (!value.trim()) {
         error = "Message is required";
       }
-      else if(value.length > 10){
+      else if(value.length < 10){
         error = "Message must be at least 10 characters long";        
       }
       break;
