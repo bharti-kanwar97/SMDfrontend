@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Dashboard = () => {
   return (
     <>
-      <div className=" ">
+      <div className="h-screen overflow-auto ">
         <Header />
         <div className="flex gap-8 bg-[#EDE8D0] h-screen">
           <div className="w-[30%]">
