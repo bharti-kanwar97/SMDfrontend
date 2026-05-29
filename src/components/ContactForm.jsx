@@ -74,14 +74,14 @@ export default function ContactForm() {
        catch (error) {
       console.error(error);
 
-    // const formattedErrors = {};
+    const formattedErrors = {};
 
     // safely access errors
-  //   error.response?.data?.errors?.forEach((err) => {
-  //     formattedErrors[err.path] = err.msg;
-  //   });
+    error.response?.data?.errors?.forEach((err) => {
+      formattedErrors[err.path] = err.msg;
+    });
 
-  //   setError(formattedErrors);
+    setError(formattedErrors);
     }
    };
   return (
