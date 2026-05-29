@@ -163,7 +163,7 @@ export default function ContactForm() {
           name="msg"
           id=""
           placeholder="Your Message"
-          rows="5"
+          rows="7"
           className="border-1 md:border-2  border-zinc-400 px-0.5 md:px-4 py-1 md:py-2 rounded-md bg-white  w-full md:mt-4 lg:mt-3 sm:mt-2.5 mt-2 outline-none focus:border-amber-500  "
           value={formData.msg}
           onChange={handleChange}
