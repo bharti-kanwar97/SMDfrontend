@@ -37,10 +37,13 @@ export default function ContactForm() {
 
 
   const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
+    const { name, value } = e.target;
+
+  setFormData({
+    ...formData,
+    [name]: value,
+  });
+
     // Real-time validation
   validate(name, value);
 
