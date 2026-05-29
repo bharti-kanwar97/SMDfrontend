@@ -118,7 +118,7 @@ export default function ContactForm() {
           value={formData.name}
           onChange={handleChange}
         />
-        {error.name && <p className="text-red-500">{error.name}</p>}
+        {error.name && <p className="text-red-500 text-xs">{error.name}</p>}
         <br />
         <input
           type="email"
@@ -129,7 +129,7 @@ export default function ContactForm() {
           value={formData.email}
           onChange={handleChange}
         />
-         {error.email && <p className="text-red-500">{error.email}</p>}
+         {error.email && <p className="text-red-500 text-xs">{error.email}</p>}
         <br />
         <input
           type="text"
@@ -140,7 +140,7 @@ export default function ContactForm() {
           value={formData.phone}
           onChange={handleChange}
         />
-        {error.phone && <p className="text-red-500">{error.phone}</p>}
+        {error.phone && <p className="text-red-500 text-xs">{error.phone}</p>}
         <br />
         <select name="about" id="" className={`border-b-1 md:border-2  border-zinc-400 px-0.5 md:px-4 py-1 md:py-2 md:rounded-md bg-white  w-full md:mt-4 lg:mt-3 sm:mt-2.5 mt-1.5 outline-none focus:border-amber-500    ${formData.about === "" ? "text-neutral-500" : "text-black"}`} value={formData.about}
           onChange={handleChange}
@@ -157,7 +157,7 @@ export default function ContactForm() {
           <option value="Data Analytics">Data Analytics</option>
         </select>
        
-        {error.about && <p className="text-red-500">{error.about}</p>}
+        {error.about && <p className="text-red-500 text-xs">{error.about}</p>}
         <br />
         <textarea
           name="msg"
@@ -168,7 +168,7 @@ export default function ContactForm() {
           value={formData.msg}
           onChange={handleChange}
         ></textarea>
-        {error.msg && <p className="text-red-500">{error.msg}</p>}
+        {error.msg && <p className="text-red-500 text-xs">{error.msg}</p>}
         <br />
         <div className="text-center">
           <button
