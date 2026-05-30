@@ -67,7 +67,7 @@ export default function Navigation() {
               className=" py-3 px-4 mx-1 font-medium text-[16px]"
               onMouseEnter={() => setOpen(true)}
               onMouseLeave={() => {
-                if (locked === false) setOpen(false);
+                setOpen(false);
               }}
             >
               Courses <IoMdArrowDropdown className="inline-block" />
