@@ -87,8 +87,8 @@ formData.append("image", image);
           <UseCKEditor 
           data={content}
     
-           onChange={(event, editor) => {
-                  const data = editor.getData();
+           onChange={(data) => {
+                  // const data = editor.getData();
                   console.log(data);
                   setContent(data);
                 }} />
