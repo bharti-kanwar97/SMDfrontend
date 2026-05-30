@@ -63,7 +63,7 @@ export default function Navigation() {
             </Link>
 
             <Link
-              onClick={() => setLocked(!locked)}
+              // onClick={() => setLocked(!locked)}
               className=" py-3 px-4 mx-1 font-medium text-[16px]"
               onMouseEnter={() => setOpen(true)}
               onMouseLeave={() => {
