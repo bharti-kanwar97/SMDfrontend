@@ -36,7 +36,7 @@ export default function AllSubject() {
   }, []);
   return (
     <>
-      <div className=" bg-[#C9C5B1] flex flex-col ">
+      <div className=" bg-[#C9C5B1] h-screen flex flex-col ">
         <div className="relative flex justify-around items-center">
           <div className="md:invisible bg-red text-[25px] px-2.5 text-[#3b0440] py-2 hover:cursor-pointer">
             <GiHamburgerMenu />
