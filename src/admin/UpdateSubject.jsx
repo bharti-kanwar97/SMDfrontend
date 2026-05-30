@@ -168,8 +168,8 @@ export default function UpdateSubject() {
         <label htmlFor="" className="text-zinc-800 font-medium text-[18px]">Short Description of Subject:</label>
         
             <UseCKEditor data={subject.shortDesc || ""}
-                                onChange={(event, editor) => {
-                                       const data = editor.getData();
+                                onChange={(data) => {
+                                      //  const data = editor.getData();
                                        console.log(data);
                                        handleEditorChange("shortDesc", data);
                                      }} />
@@ -179,8 +179,8 @@ export default function UpdateSubject() {
         <label htmlFor="" className="text-zinc-800 font-medium text-[18px]">Detail of Subject:</label>
     
         <UseCKEditor data={subject.content1 || ""}
-                                onChange={(event, editor) => {
-                                       const data = editor.getData();
+                                onChange={(data) => {
+                                      //  const data = editor.getData();
                                        console.log(data);
                                          handleEditorChange("content1", data)
                                      }} />
@@ -190,8 +190,8 @@ export default function UpdateSubject() {
         <label htmlFor="" className="text-zinc-800 font-medium text-[18px]">Detail 2 of Subject:</label>
         
          <UseCKEditor data={subject.content2 || ""}
-                                onChange={(event, editor) => {
-                                       const data = editor.getData();
+                                onChange={(data) => {
+                                      //  const data = editor.getData();
                                        console.log(data);
                                          handleEditorChange("content2",data);
                                      }} />
