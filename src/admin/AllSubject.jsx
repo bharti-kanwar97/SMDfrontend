@@ -36,7 +36,7 @@ export default function AllSubject() {
   }, []);
   return (
     <>
-      <div className=" bg-[#C9C5B1] h-screen">
+      <div className=" bg-[#C9C5B1] flex flex-col ">
         <div className="relative flex justify-around items-center">
           <div className="md:invisible bg-red text-[25px] px-2.5 text-[#3b0440] py-2 hover:cursor-pointer">
             <GiHamburgerMenu />
@@ -47,11 +47,11 @@ export default function AllSubject() {
           </Link>
         </div>
 
-        <div className="flex gap-4">
-           <div className="w-[30%]">
+        <div className="flex flex-1 overflow-hidden gap-4">
+           <div className="w-[30%] overflow-y-auto h-full">
                       <SideNav />
                     </div>
-          <div className="w-full h-screen">
+          <div className="w-full h-full overflow-y-auto">
             <table className="table-auto text-center max-w-[1200px] min-w-[600px] w-[100%] mx-auto bg-white rounded-xl shadow-xl/80">
               <thead>
                 <tr className="text-2xl bg-[#3b0440] border-b-2 border-zinc-800  ">
