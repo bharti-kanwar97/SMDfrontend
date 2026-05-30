@@ -93,6 +93,7 @@ export default function Navigation() {
             </Link>
           </div>
         </nav>
+        </div>
 
         {sideMenu && (
           <DropdownMenu2
@@ -110,7 +111,6 @@ export default function Navigation() {
             setSideMenu={setSideMenu}
           />
         )}
-      </div>
     </>
   );
 }

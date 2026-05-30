@@ -166,13 +166,7 @@ export default function UpdateSubject() {
        <br /><br />
        <div>
         <label htmlFor="" className="text-zinc-800 font-medium text-[18px]">Short Description of Subject:</label>
-        {/* <CKEditor
-        editor={ClassicEditor}
-        data={subject.shortDesc || ""}
-        onChange={(event, editor) => {
-           const data = editor.getData();
-           handleEditorChange("shortDesc", data);
-        }} /> */}
+        
             <UseCKEditor data={subject.shortDesc || ""}
                                 onChange={(event, editor) => {
                                        const data = editor.getData();
@@ -183,13 +177,7 @@ export default function UpdateSubject() {
        <br /><br />
        <div>
         <label htmlFor="" className="text-zinc-800 font-medium text-[18px]">Detail of Subject:</label>
-        {/* <CKEditor
-        editor={ClassicEditor}
-        data={subject.content1 || ""}
-        onChange={(event, editor) => {
-            const data = editor.getData();
-            handleEditorChange("content1", data)
-        }} /> */}
+    
         <UseCKEditor data={subject.content1 || ""}
                                 onChange={(event, editor) => {
                                        const data = editor.getData();
@@ -200,13 +188,7 @@ export default function UpdateSubject() {
        <br /><br />
        <div>
         <label htmlFor="" className="text-zinc-800 font-medium text-[18px]">Detail 2 of Subject:</label>
-        {/* <CKEditor
-        editor={ClassicEditor}
-        data={subject.content2 || ""} 
-        onChange={(event, editor) => {
-      const data = editor.getData();
-      handleEditorChange("content2",data);
-        }} /> */}
+        
          <UseCKEditor data={subject.content2 || ""}
                                 onChange={(event, editor) => {
                                        const data = editor.getData();
