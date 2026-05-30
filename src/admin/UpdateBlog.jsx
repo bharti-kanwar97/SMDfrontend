@@ -6,7 +6,7 @@ import UseCKEditor from "../UseCKEditor.jsx";
 import Header from "./partials/Header";
 
 export default function UpdateBlog() {
-   const [content, setContent] = useState("");
+  //  const [content, setContent] = useState("");
   const { id } = useParams();
   const [blog, setBlog] = useState({
     title: "",
@@ -116,10 +116,13 @@ export default function UpdateBlog() {
               </label>
              
                        <UseCKEditor data={blog.content}
-                        onChange={(event, editor) => {
-                               const data = editor.getData();
+                        onChange={(data) => {
+                              //  const data = editor.getData();
                                console.log(data);
-                               setContent(data);
+                                setBlog((prev) => ({
+      ...prev,
+      content: data,
+    }));
                              }} />
                         
             </div>
