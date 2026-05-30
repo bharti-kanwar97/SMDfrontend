@@ -11,7 +11,7 @@ import { useState } from "react";
 
 export default function Navigation() {
   const [open, setOpen] = useState(false);
-  // const [locked, setLocked] = useState(false);
+  const [locked, setLocked] = useState(false);
   const [sideMenu, setSideMenu] = useState(false);
   const location = useLocation();
 
@@ -63,11 +63,11 @@ export default function Navigation() {
             </Link>
 
             <Link
-              // onClick={() => setLocked(!locked)}
+              onClick={() => setLocked(!locked)}
               className=" py-3 px-4 mx-1 font-medium text-[16px]"
               onMouseEnter={() => setOpen(true)}
               onMouseLeave={() => {
-                setOpen(false);
+               if(!locked)  setOpen(false);
               }}
             >
               Courses <IoMdArrowDropdown className="inline-block" />
@@ -107,7 +107,7 @@ export default function Navigation() {
           <DropdownMenu
             open={open}
             setOpen={setOpen}
-            // setLocked={setLocked}
+            setLocked={setLocked}
             setSideMenu={setSideMenu}
           />
         )}
