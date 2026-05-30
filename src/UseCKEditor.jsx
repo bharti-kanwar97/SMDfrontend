@@ -41,7 +41,7 @@ import {
 
 import 'ckeditor5/ckeditor5.css';
 
-export default function UseCKEditor({{ value, onChange }}) {
+export default function UseCKEditor({ value, onChange }) {
   return (
     <CKEditor
       editor={ClassicEditor}
