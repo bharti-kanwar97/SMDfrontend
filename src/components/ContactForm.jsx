@@ -106,7 +106,7 @@ export default function ContactForm() {
   return (
     <div className="w-[100%] mx-auto bg-white rounded-md h-auto">
       <h1 className="bg-[#105503] text-white px-8 py-2 text-center font-roboto font-medium text-[20px] sm:text-[28px] rounded-t-sm">
-        Join SMD Academy
+        Join SRMD Academy
       </h1>
       <form onSubmit={handleSubmit} className="w-[90%] mx-auto">
         <input

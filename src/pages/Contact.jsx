@@ -61,7 +61,7 @@ export default function Contact() {
                 Phone: +91 9090100517
               </h3>
               <h3 className="font-roboto font-light text-[18px] leading-[27px] md:text-[16px] md:leading-[24px] text-[#757575]">
-                Phone : +91 9057391557
+                Phone : +91 9057471755
               </h3>
             </div>
             <div
