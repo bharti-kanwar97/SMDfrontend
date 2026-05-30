@@ -41,10 +41,11 @@ import {
 
 import 'ckeditor5/ckeditor5.css';
 
-export default function UseCKEditor({ value, onChange }) {
+export default function UseCKEditor({ data, onChange }) {
   return (
     <CKEditor
       editor={ClassicEditor}
+	  data={data}
       config={{
         licenseKey: 'GPL',
         plugins: [
@@ -136,6 +137,10 @@ export default function UseCKEditor({ value, onChange }) {
     }
   }
       }}
+	  onChange={(event, editor) => {
+		const data = editor.getData();
+		onChange(data);
+	  }}
     />
   );
 }
