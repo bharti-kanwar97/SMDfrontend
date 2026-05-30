@@ -8,6 +8,12 @@
 	}
 }
 
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
 :root {
 	--ck-content-font-family: 'Lato';
 }
