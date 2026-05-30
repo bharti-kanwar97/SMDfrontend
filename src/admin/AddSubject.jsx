@@ -90,8 +90,8 @@ export default function AddSubject() {
               Short Description: &nbsp;&nbsp;
             </label>
              <UseCKEditor data={content}
-                       onChange={(event, editor) => {
-                              const data = editor.getData();
+                       onChange={(data) => {
+                              // const data = editor.getData();
                               console.log(data);
                               setContent(data);
                             }} />
@@ -120,8 +120,8 @@ export default function AddSubject() {
               Subject Description: &nbsp;&nbsp;
             </label>
              <UseCKEditor data={content1}
-                       onChange={(event, editor) => {
-                              const data = editor.getData();
+                       onChange={(data) => {
+                              // const data = editor.getData();
                               console.log(data);
                               setContent1(data);
                             }} />
@@ -146,8 +146,8 @@ export default function AddSubject() {
               Subject Description: &nbsp;&nbsp;
             </label>
            <UseCKEditor data={content2}
-                     onChange={(event, editor) => {
-                            const data = editor.getData();
+                     onChange={(data) => {
+                            // const data = editor.getData();
                             console.log(data);
                             setContent2(data);
                           }} /> <br /><br />
