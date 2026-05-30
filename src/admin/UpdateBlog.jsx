@@ -42,7 +42,7 @@ export default function UpdateBlog() {
     // console.log(blog)
     const formData = new FormData();
     formData.append("title", blog.title);
-    formData.set("content", content);
+    formData.set("content", blog.content);
 
     // Append only if new file selected
     if (blog.image instanceof File) {
